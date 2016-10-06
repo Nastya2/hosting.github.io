@@ -53,13 +53,13 @@ p {
   overflow: hidden;
   max-width: 100%;
   margin-bottom: 60px;
-   
-  &::after {
-    content: "";
-    display: block;
-    position: relative;
-    height: 80px;
-  }
+}
+
+.wrapper::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 80px;
 }
 
 /* ------------------ download --------------------- */
@@ -69,10 +69,10 @@ p {
   padding-top: 9px;
   padding-bottom: 8px;
   display: none;
-    
-  &.top__text-320 {
-    display: none;
-  }
+}
+
+.download.top__text-320 {
+  display: none;
 }
 
 .downloadInfo {
@@ -129,25 +129,27 @@ p {
   vertical-align: middle;
   margin-left: 30px;
   position: relative;
+}
 
-  &::after,
-  &::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 1px;
-    background: #fff;
-    top: 4px;
-    left: 0;
-  }
+.close-download::after,
+  .close-download::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 1px;
+  background: #fff;
+  top: 4px;
+  left: 0;
 }
 
 .close-download::before {
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .close-download::after {
-  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 
 /* ------------------- header ------------------------ */
@@ -236,10 +238,10 @@ p {
   display: inline-block;
   vertical-align: middle;
   margin-left: 20px;
+}
 
-  &:first-child {
-    margin-left: 0;  
-  }
+.socials__item:first-child {
+  margin-left: 0;
 }
 
 .socials__link {
@@ -337,16 +339,16 @@ p {
   border-top: 24px solid  #ef4b2b;
   border-right: 24px solid  #ef4b2b;
   border-top-right-radius: 5px;
-    
-  &::after {
-    position: absolute;
-    content: "";
-    background: url("../img/star.png");
-    width: 15px;
-    height: 14px;
-    top: -17px;
-    left: 3px;
-  }
+}
+
+.angle::after {
+  position: absolute;
+  content: "";
+  background: url("../img/star.png");
+  width: 15px;
+  height: 14px;
+  top: -17px;
+  left: 3px;
 }
 
 .star {
@@ -437,10 +439,10 @@ p {
 .share__item {
   display: inline-block;
   margin-left: 22px;
-    
-  &:first-child {
-    margin-left: 0;   
-  }
+}
+
+.share__item:first-child {
+  margin-left: 0;
 }
 
 .share__link {
@@ -453,15 +455,15 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 0.5px solid #bdbdbd;
-    
-  &:first-child {
-    padding-top: 0;    
-  }
+}
 
-  &:last-child {
-    padding-bottom: 0;
-    border-bottom: 0;
-  }
+.news__item:first-child {
+  padding-top: 0;
+}
+
+.news__item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .news__text {
@@ -513,10 +515,10 @@ p {
   margin-left: 13px;
   position: relative;
   margin-bottom: 10px;
-    
-  &:first-child {
-    margin-left: 0;
-  }
+}
+
+.media__link:first-child {
+  margin-left: 0;
 }
 
 .media__resource-play {
@@ -530,15 +532,15 @@ p {
   margin-top: -30px;
   opacity: 0.9;
   border-radius: 50%;
-    
-  &::after {
-    position: absolute;
-    content: "";
-    border: 11px solid transparent;
-    border-left: 16px solid #fff;
-    top: 21px;
-    left: 24px;
-  }
+}
+
+.media__resource-play::after {
+  position: absolute;
+  content: "";
+  border: 11px solid transparent;
+  border-left: 16px solid #fff;
+  top: 21px;
+  left: 24px;
 }
 
 .media {
@@ -584,10 +586,10 @@ p {
   vertical-align: top;
   margin-right: 12px;
   margin-top: 12px;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
+.description__photo-item:last-child {
+  margin-right: 0;
 }
 
 .description__photo-img {
@@ -652,10 +654,10 @@ p {
   width: 125px;
   text-align: center;
   margin-right: 45px;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
+.download-file-item:last-child {
+  margin-right: 0;
 }
 
 .download-file__picture {
@@ -684,14 +686,14 @@ p {
 .angle_protected {
   border-top: 24px solid  #3c434a;
   border-right: 24px solid  #3c434a;
-  
-  &::after {
-    background: url("../img/lock.svg");
-    width: 12px;
-    height: 15px;
-    top: -18px;
-    left: 5px;
-  }
+}
+
+.angle_protected::after {
+  background: url("../img/lock.svg");
+  width: 12px;
+  height: 15px;
+  top: -18px;
+  left: 5px;
 }
 
 /* ------------------ box6 --------------------- */
@@ -706,15 +708,15 @@ p {
 
 .angle_archived {
   border-top: 24px solid  #858585;
-  border-right: 24px solid  #858585;
-    
-  &::after {
-    background: url("../img/box.svg");
-    width: 16px;
-    height: 14px;
-    top: -16px;
-    left: 3px;
-  }   
+  border-right: 24px solid  #858585;   
+}
+
+.angle_archived::after {
+  background: url("../img/box.svg");
+  width: 16px;
+  height: 14px;
+  top: -16px;
+  left: 3px;
 }
 
 /* ------------------ footer ----------------- */      
@@ -748,10 +750,10 @@ p {
   display: inline-block;
   vertical-align: top;
   margin-left: 17px;
+}
 
-  &:first-child {
-    margin-left: 0;   
-  }
+.footer-menu__item:first-child {
+  margin-left: 0;
 }
 
 .footer-menu__link {
@@ -764,10 +766,10 @@ p {
   display: inline-block;
   vertical-align: bottom;
   margin-left: 17px;
+}
 
-  &:first-child {
-    margin-left: 0;   
-  }
+.footer-social__item:first-child {
+  margin-left: 0;
 }
 
 .footer-social__link_tw-footer .footer-social__icon {
@@ -850,29 +852,29 @@ p {
   
   .download {
     display: block;
-
-    .top__text-download {
-      display: none;
-    }
-
-    .top__text-320 {
-      display: block;
-      font-size: 11px;
-      color: #fff;
-    }
-      
-    .close-download {
-      margin-left: 16px;     
-    }
-      
-    .download-button {
-      padding: 7px 17px 7px 18px;
-      width: 90px;
-    }
-      
-    .clickElem {
-      padding-top: 3px;     
-    }
+  }
+  
+  .download .top__text-download {
+    display: none;
+  }
+  
+  .download .top__text-320 {
+    display: block;
+    font-size: 11px;
+    color: #fff;
+  }
+  
+  .download .close-download {
+    margin-left: 16px;
+  }
+  
+  .download .download-button {
+    padding: 7px 17px 7px 18px;
+    width: 90px;
+  }
+  
+  .download .clickElem {
+    padding-top: 3px;
   }
     
   .main-header {
@@ -943,15 +945,15 @@ p {
     cursor: pointer;
     width: 140px;
     position: relative;
-      
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url(../img/share.png);
-      width: 16px;
-      height: 16px;
-      left: 41px;
-    }
+  }
+ 
+  .share-button::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/share.png);
+    width: 16px;
+    height: 16px;
+    left: 41px;
   }
 
   .box {
@@ -1116,10 +1118,10 @@ p {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
+  }
 
-    &:first-child {
-      margin-left: 0;  
-    }
+  .modalWin320__item:first-child {
+    margin-left: 0;
   }
 
   .modalWin320__link {
@@ -1192,25 +1194,27 @@ p {
     position: relative;
     margin-top: 14px;
     margin-right: 13px;
+  }
 
-    &::after,
-    &::before {
-      position: absolute;
-      content: "";
-      width: 14px;
-      height: 2px;
-      background: #757e87;
-      top: 5px;
-      right: 0;
-    }
+  .close-popup320::after,
+    .close-popup320::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 2px;
+    background: #757e87;
+    top: 5px;
+    right: 0;
   }
 
   .close-popup320::before {
-    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
   }
 
   .close-popup320::after {
-    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
   }
 
   .modal-overlay {
