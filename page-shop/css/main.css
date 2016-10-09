@@ -24,6 +24,19 @@ body {
   width: 1110px;
 }
 
+h1 {
+  font-family: 'open_sanssemibold';
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-height: 100%;
   max-width: 100%;
@@ -355,13 +368,6 @@ footer {
   margin-bottom: 20px;
 }
 
-h1 {
-  font-family: 'open_sanssemibold';
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-}
-
 .sidebar {
   float: left;
   width: 34%;
@@ -438,9 +444,7 @@ h1 {
   border-radius: 50%;
   background: #ff6603;
 }
-label {
-  display:block;
-}
+
 .filter__choose-input {
   position: absolute;
   top: 0;
